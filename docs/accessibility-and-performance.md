@@ -6,7 +6,7 @@ description: MyST sites are designed for mobile and desktop sites, accessibility
 
 ## Performance
 
-The MyST Site existing, modern web-frameworks including [Remix](https://remix.run/) and [React](https://reactjs.org/). These tools come out-of-the-box with prefetching for faster navigation, smaller network payloads through modern web-bundlers, image optimization, and partial-page refresh through single-page application. We follow the [PRPL Pattern](https://web.dev/apply-instant-loading-with-prpl/)[^prpl] where possible.
+The MyST Site existing, modern web-frameworks include [Remix](https://remix.run/) and [React](https://reactjs.org/). These tools come out-of-the-box with prefetching for faster navigation, smaller network payloads through modern web-bundlers, image optimization, and partial-page refresh through single-page application. We follow the [PRPL Pattern](https://web.dev/apply-instant-loading-with-prpl/)[^prpl] where possible.
 
 [^prpl]: PRPL is a pattern designed to improve performance of webpages:
 
@@ -33,12 +33,12 @@ Lighthouse score run Sept 15, 2022 on deployed site using Curvenote's global CDN
 Some performance and accessibility considerations:
 
 - Semantic HTML used for articles, asides, figures, nav, and captions, including limited use of generic `div`s and `span`s where we can.
-- Anchor tags for all interactive content, that work when Javascript is _not_ enabled
-- Prerendering math on the server, reducing page load size (for javascript) and improving render speed and cumulative layout shift.
+- Anchor tags for all interactive content, that work when JavaScript is _not_ enabled
+- Prerendering math on the server, reducing page load size (for JavaScript) and improving render speed and cumulative layout shift.
 - Optimizing images to next-generation formats (e.g. `webp`), and providing fallbacks for older browsers (through image source sets)
 - Providing figure captions as alt-text for images
 - Lazy-fetching syntax highlighters
-- Lazy-fetching unused javascript
+- Lazy-fetching unused JavaScript
 - Bundling and eliminating code for the entire site
 - Ensuring appropriate contrast in text and background in the default themes
 
@@ -46,11 +46,11 @@ Some performance and accessibility considerations:
 :class: dropdown
 # Comparing to JupyterBook & Quarto
 
-As a comparison to JupyterBook or Quarto, which are both static site generators for scientific content, and assets built by Sphinx and Pandoc, respectively. There are improvements possible primarily in the bundling of Javascript assets, which is very difficult to do in the Sphinx build process, for example.
+As a comparison to JupyterBook or Quarto, which are both static site generators for scientific content, and assets built by Sphinx and Pandoc, respectively. There are improvements possible primarily in the bundling of JavaScript assets, which is very difficult to do in the Sphinx build process, for example.
 
 ```{figure} ./images/lighthouse-jb-2022_09_15.png
 :label: lighthouse-jb
-Lighthouse score run Sept 15, 2022 on deployed site, the majority of issues are around bundling assets, reducing javascript used, optimizing images, and speed to initial page load.
+Lighthouse score run Sept 15, 2022 on deployed site, the majority of issues are around bundling assets, reducing JavaScript used, optimizing images, and speed to initial page load.
 ```
 
 ```{figure} ./images/lighthouse-quarto-2022_09_15.png
